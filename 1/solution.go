@@ -60,18 +60,9 @@ func getWindowSums(lines []string) []int {
 		depth2, _ := strconv.Atoi(lines[i+1])
 		depth3, _ := strconv.Atoi(lines[i+2])
 		window := []int{depth1, depth2, depth3}
-		windowSum := sumArray(window)
+		windowSum := utils.SumIntArray(window)
 		windows = append(windows, windowSum)
 	}
 
 	return windows
-}
-
-func sumArray(arr []int) int {
-	sum := 0
-	for i := 0; i < len(arr); i++ {
-		sum += arr[i]
-	}
-
-	return sum
 }
