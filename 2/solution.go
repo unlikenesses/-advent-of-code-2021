@@ -13,10 +13,6 @@ func main() {
 
 	instructions := parseInstructions(lines)
 
-	// for _, inst := range instructions {
-	// 	fmt.Println(inst)
-	// }
-
 	part1 := partOne(instructions)
 	fmt.Println(part1)
 
